@@ -12,7 +12,8 @@ it('renders without crashing', () => {
   });
 
 describe ('testing App component', () => { 
-   let wrapper;  beforeEach(() => { wrapper = shallow(<App />);
+   let wrapper;  
+   beforeEach(() => { wrapper = shallow(<App />);
    }); 
    
    it('App renders as a div', () => {    
