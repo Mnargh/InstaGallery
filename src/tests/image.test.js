@@ -2,16 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { shallow } from "enzyme";
 
-import Post from "../components/postfeed";
+import Image from "../components/image";
 
-describe("Post component", () => {
+describe("Image component", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<Post />);
+    wrapper = shallow(<Image />);
   });
 
-  it("Post renders as a div", () => {
+  it("Image renders as a div", () => {
     expect(wrapper.type()).toBe("div");
   });
-
 });

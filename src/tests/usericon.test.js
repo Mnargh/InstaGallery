@@ -2,16 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { shallow } from "enzyme";
 
-import Post from "../components/postfeed";
+import UserIcon from "../components/usericon";
 
-describe("Post component", () => {
+describe("UserIcon component", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<Post />);
+    wrapper = shallow(<UserIcon />);
   });
 
-  it("Post renders as a div", () => {
+  it("UserIcon renders as a div", () => {
     expect(wrapper.type()).toBe("div");
   });
-
 });
