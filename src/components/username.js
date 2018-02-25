@@ -3,7 +3,10 @@ import "../App.css";
 
 class Username extends Component {
   render() {
-    return <div className="Username" ></div>;
+    return (
+        <div className="Username" >
+        </div>
+    );
   }
 }
 

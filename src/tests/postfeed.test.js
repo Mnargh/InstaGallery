@@ -19,4 +19,5 @@ describe ('Postfeed component', () => {
     it("Postfeed renders 5 Posts inside of it", () => {
         expect(wrapper.find('Post')).toHaveLength(5);
     });
+
 });

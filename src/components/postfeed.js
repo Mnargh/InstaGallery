@@ -10,7 +10,9 @@ class Postfeed extends Component {
         return (
              <div className='Postfeed'>
                {data.map((post, index) => {
-                return <Post key={index} />
+                return <Post 
+                key={index}
+                username={post.username} />
                }) }
                 
              </div>
