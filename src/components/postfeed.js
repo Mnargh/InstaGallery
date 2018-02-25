@@ -9,8 +9,8 @@ class Postfeed extends Component {
     render() {
         return (
              <div className='Postfeed'>
-               {data.map(post => {
-                return <Post />
+               {data.map((post, index) => {
+                return <Post key={index} />
                }) }
                 
              </div>
