@@ -16,7 +16,7 @@ describe ('Postfeed component', () => {
         expect(wrapper.type()).toBe('div');
     });
 
-    it("Postfeed renders a Post inside of it", () => {
-        expect(wrapper.find('Post')).toHaveLength(1);
+    it("Postfeed renders 5 Posts inside of it", () => {
+        expect(wrapper.find('Post')).toHaveLength(5);
     });
 });
