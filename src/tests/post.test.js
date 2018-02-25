@@ -5,18 +5,18 @@ import Post from "../components/post";
 import Username from "../components/username";
 
 describe("Post component", () => {
-  let Postwrapper;
+  let wrapper;
   beforeEach(() => {
-    Postwrapper = shallow(<Post />);
+    wrapper = shallow(<Post />);
   });
 
   it("Post renders as a div", () => {
-    expect(Postwrapper.type()).toBe("div");
+    expect(wrapper.type()).toBe("div");
   });
 
   // test for post receiving props/rendering props
 
   it("Post renders a username component inside of it", () => {
-    expect(Postwrapper.find('Username')).toHaveLength(1);
+    expect(wrapper.find('Username')).toHaveLength(1);
   });
 });

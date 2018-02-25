@@ -21,4 +21,8 @@ describe("Username component", () => {
   it("Username state is set to the props passed to the component", () => {
     expect(wrapper.state().username).toEqual('Tom');
   });
+
+  it("Username component displays the username", () => {
+    expect(wrapper.text()).toEqual('Tom');
+  });
 });
