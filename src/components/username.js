@@ -5,12 +5,11 @@ class Username extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        username: this.props.username
     };
   }
 
   render() {
-    return <div className="Username">{this.state.username}</div>;
+    return <div className="Username">{this.props.username}</div>;
   }
 }
 
