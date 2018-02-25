@@ -49,7 +49,7 @@ So that I can see how popular a photo is with other users.
 
 ```
 
-Bonus
+### Bonus
 
 ```
 As an instaGallery user, 
@@ -60,3 +60,10 @@ As an instaGallery user,
 I want to be able to delete a users card from my feed, 
 So that I have more control of the content I like.
 ```
+
+### Problems encountered
+
+* How to test child components?
+    Attempting to mock child components and test that they are rendered within the wrapper as do not need to test the behaviour or appearance of the child components from the parent test file.
+
+    Found potential in using a Babel plugin Rewire that replaces the render child components with mocks. Then found that simply the shallow rendering of enzyme will actually partially render the child components, without adding any of their behaviour, allowing you to test for their presence.
