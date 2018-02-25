@@ -7,10 +7,18 @@ import Username from "../components/username";
 describe("Username component", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<Username />);
+    wrapper = shallow(<Username username={"Tom"} />);
   });
 
   it("Username renders as a div", () => {
     expect(wrapper.type()).toBe("div");
+  });
+
+  it("Username sets username state from props passed to it", () => {
+    expect(wrapper.props().children).toEqual('Tom');
+  });
+
+  it("Username state is set to the props passed to the component", () => {
+    expect(wrapper.state().username).toEqual('Tom');
   });
 });
