@@ -19,4 +19,8 @@ describe ('testing App component', () => {
    it('App renders as a div', () => {    
      expect(wrapper.type()).toBe('div');  
     });
+
+   it('App renders a Postfeed', () => {
+    expect(wrapper.find('Postfeed')).toHaveLength(1);
+   });
 });
