@@ -13,7 +13,10 @@ class Postfeed extends Component {
                 return <Post 
                 key={index}
                 username={post.username} 
-                usericon={post.userIconLink}/>
+                usericon={post.userIconLink}
+                photo = {post.imageLink}
+                />
+                
                }) }
                 
              </div>

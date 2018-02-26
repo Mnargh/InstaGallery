@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../App.css";
 import Username from "./username";
 import UserIcon from "./usericon";
+import Photo from "./photo";
 
 class Post extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class Post extends Component {
     return <div className="Post">
         <Username username={this.props.username} />
         <UserIcon usericon={this.props.usericon} />
+        <Photo photo={this.props.photo} />
       </div>;
   }
 }

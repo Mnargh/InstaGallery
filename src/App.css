@@ -46,3 +46,13 @@
   border-color: black;
   border-width: 30px;
 }
+
+.Icon {
+  height: 50px;
+  width: 50px;
+}
+
+.Photo {
+  height: 100px;
+  width: 100px;
+}
