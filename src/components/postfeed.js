@@ -9,16 +9,17 @@ class Postfeed extends Component {
     render() {
         return (
              <div className='Postfeed'>
-               {data.map((post, index) => {
-                return <Post 
-                key={index}
-                username={post.username} 
-                usericon={post.userIconLink}
-                photo = {post.imageLink}
-                />
-                
-               }) }
-                
+                <center>
+                    {data.map((post, index) => {
+                        return <Post 
+                        key={index}
+                        username={post.username} 
+                        usericon={post.userIconLink}
+                        photo = {post.imageLink}
+                        />
+                        
+                    })}
+                </center>
              </div>
         );
     }
