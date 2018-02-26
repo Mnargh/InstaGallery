@@ -12,7 +12,8 @@ class Postfeed extends Component {
                {data.map((post, index) => {
                 return <Post 
                 key={index}
-                username={post.username} />
+                username={post.username} 
+                usericon={post.userIconLink}/>
                }) }
                 
              </div>
