@@ -20,4 +20,6 @@ describe ('Postfeed component', () => {
         expect(wrapper.find('Post')).toHaveLength(5);
     });
 
+    // Unsure if need to test if postfeed is passing props to the Post child component
+
 });

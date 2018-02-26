@@ -18,11 +18,4 @@ describe("Post component", () => {
     expect(wrapper.find('Username')).toHaveLength(1);
   });
 
-  it("Post passes username prop on to child components", () => {
-    // console.log(wrapper.props().children);
-    // console.log("vision");
-    // console.log(wrapper.instance().props.username);
-    // console.log(wrapper.find("Username").props());
-    expect(wrapper.instance().props.username).toEqual(wrapper.props().children.props.username);
-  });
 });

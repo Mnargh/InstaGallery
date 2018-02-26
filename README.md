@@ -74,3 +74,6 @@ So that I have more control of the content I like.
 
 * How to add a suitable key to each Post component?
     Solved this issue by adding an index in to the mapping function of the json file imported in to the Postfeed component. This index is then assigned to each Post rendered. This is a less than ideal solution as it relies upon each post being rendered in exactly the same order each time as otherwise the key will change for each post. However in this example the order will stay the same so it is acceptable. If an ID for each post had been provided, perhaps if the posts were stored in a database and the ID added to the json response, then that would provide a unique identifier and would be a suitable replacement for just using the index. Still unsure of how to test this, or if it is even necessary.
+
+* Is it necessary to test if props from a parent component?
+    Postfeed passing props to Post which passes props to Username; this is a feature of React, so it does not seem necessary to test this. I only need to test the outcome of passing these props, which is that Username renders the props correctly.
