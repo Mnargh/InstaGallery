@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Image } from "react-bootstrap";
 import "../App.css";
 
-class Likebutton extends Component {
+class LikeButton extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -10,9 +10,9 @@ class Likebutton extends Component {
 
   render() {
     return (
-      <Image src={require(`../likeicon.svg`)} className="LikeIcon" />
+      <Image src={require(`../likeicon.svg`)} className="LikeButton" />
     );
   }
 }
 
-export default Likebutton;
+export default LikeButton;

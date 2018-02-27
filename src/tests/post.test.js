@@ -6,6 +6,8 @@ import Username from "../components/username";
 import Photo from "../components/photo";
 import Description from "../components/photo";
 import UserIcon from "../components/usericon";
+import Likes from "../components/likes";
+import LikeButton from "../components/likeButton";
 
 describe("Post component", () => {
   let wrapper;
@@ -35,6 +37,14 @@ describe("Post component", () => {
 
   it("Post renders a description component inside of it", () => {
     expect(wrapper.find('Description')).toHaveLength(1);
+  });
+
+  it("Post renders a Likes component inside of it", () => {
+    expect(wrapper.find("Likes")).toHaveLength(1);
+  });
+
+  it("Post renders a likeButton component inside of it", () => {
+    expect(wrapper.find("LikeButton")).toHaveLength(1);
   });
 
 

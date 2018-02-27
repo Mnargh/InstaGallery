@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import "../App.css";
 import { Grid, Col, Row } from "react-bootstrap";
 import Username from "./username";
-import UserIcon from "./userIcon";
+import UserIcon from "./usericon";
 import Photo from "./photo";
 import Description from "./description";
 import Like from "./likes"
+import LikeButton from "./likeButton"
 
 class Post extends Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class Post extends Component {
             </Row>
             <Row className="Likes">
               <Col sm={1}>
+                <LikeButton />
                 <Like likes={this.props.likes} />
               </Col>
             </Row>
