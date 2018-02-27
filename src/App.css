@@ -40,7 +40,7 @@
 }
 
 .Post {
-  height: 300px;
+  height: 100%;
   width: 35%;
   align-self: center;
   background-color:#ADE1F0;
@@ -48,6 +48,8 @@
   border-width: 1px;
   border-style: solid;
   border-bottom: 0px;
+  padding-bottom: 30px;
+  padding-top: 10px;
 
 }
 
@@ -76,4 +78,8 @@
 
 .PostPhoto {
   padding-top: 70px;
+}
+
+.Description {
+  width: 150px;
 }

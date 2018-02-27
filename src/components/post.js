@@ -4,6 +4,7 @@ import { Grid, Col, Row } from "react-bootstrap";
 import Username from "./username";
 import UserIcon from "./usericon";
 import Photo from "./photo";
+import Description from "./description";
 
 class Post extends Component {
   constructor(props) {
@@ -12,7 +13,8 @@ class Post extends Component {
   }
 
   render() {
-    return <div className="Post">
+    return ( 
+      <div className="Post">
         <center>
           <Grid>
             <Row className="UserInfo">
@@ -24,13 +26,17 @@ class Post extends Component {
               </Col>
             </Row>
             <Row className="PostPhoto">
-              <Col sm={2}>
-                <Photo photo={this.props.photo} />
+              <Photo photo={this.props.photo} />
+            </Row>
+            <Row className="description">
+              <Col sm={8}>
+                <Description description={this.props.description} />
               </Col>
             </Row>
           </Grid>
         </center>
-      </div>;
+    </div>
+    );
   }
 }
 
