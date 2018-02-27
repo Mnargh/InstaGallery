@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../App.css";
 import { Grid, Col, Row } from "react-bootstrap";
 import Username from "./username";
-import UserIcon from "./usericon";
+import UserIcon from "./userIcon";
 import Photo from "./photo";
 import Description from "./description";
 import Like from "./likes"
