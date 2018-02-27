@@ -5,6 +5,7 @@ import Username from "./username";
 import UserIcon from "./usericon";
 import Photo from "./photo";
 import Description from "./description";
+import Like from "./likes"
 
 class Post extends Component {
   constructor(props) {
@@ -13,8 +14,7 @@ class Post extends Component {
   }
 
   render() {
-    return ( 
-      <div className="Post">
+    return <div className="Post">
         <center>
           <Grid>
             <Row className="UserInfo">
@@ -28,6 +28,11 @@ class Post extends Component {
             <Row className="PostPhoto">
               <Photo photo={this.props.photo} />
             </Row>
+            <Row className="Likes">
+              <Col sm={1}>
+                <Like likes={this.props.likes} />
+              </Col>
+            </Row>
             <Row className="description">
               <Col sm={8}>
                 <Description description={this.props.description} />
@@ -35,8 +40,7 @@ class Post extends Component {
             </Row>
           </Grid>
         </center>
-    </div>
-    );
+      </div>;
   }
 }
 

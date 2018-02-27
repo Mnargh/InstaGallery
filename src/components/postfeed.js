@@ -17,6 +17,7 @@ class Postfeed extends Component {
                         usericon={post.userIconLink}
                         photo = {post.imageLink}
                         description = {post.description}
+                        likes = {post.likes}
                         />
                         
                     })}

@@ -81,5 +81,11 @@
 }
 
 .Description {
+  padding-top: 20px;
   width: 150px;
+}
+
+.Likes {
+  padding-top: 10px;
+  color: rgb(52, 27, 212);
 }
