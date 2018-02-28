@@ -29,9 +29,11 @@ class Post extends Component {
             <Row className="PostPhoto">
               <Photo photo={this.props.photo} />
             </Row>
-            <Row className="Likes">
+            <Row className="LikesRow">
               <Col sm={1}>
                 <LikeButton />
+              </Col>
+              <Col sm={1}>
                 <Like likes={this.props.likes} />
               </Col>
             </Row>
