@@ -11,7 +11,24 @@ import LikeButton from "./likeButton"
 class Post extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      likes: this.props.likes,
+      liked: this.props.liked
+    };
+  }
+
+  handleClick() {
+    var likesCopy = this.state.likes;
+    var likedCopy = this.state.liked;
+    if (this.state.liked === true) {
+      likesCopy -= 1;
+      likedCopy = false;
+    }
+    else if (this.state.liked === false) {
+      likesCopy += 1;
+      likedCopy = true;
+    }
+    this.setState({likes: likesCopy, liked: likedCopy});
   }
 
   render() {
@@ -31,10 +48,10 @@ class Post extends Component {
             </Row>
             <Row className="LikesRow">
               <Col sm={1}>
-                <LikeButton />
+                <LikeButton onClick={() => this.handleClick()} />
               </Col>
               <Col sm={1}>
-                <Like likes={this.props.likes} />
+                <Like likes={this.state.likes} />
               </Col>
             </Row>
             <Row className="description">

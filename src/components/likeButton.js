@@ -10,7 +10,11 @@ class LikeButton extends Component {
 
   render() {
     return (
-      <Image src={require(`../likeicon.svg`)} className="LikeButton" />
+      <Image 
+        src={require(`../likeicon.svg`)} 
+        className="LikeButton"
+        onClick={() => this.props.onClick()}
+         />
     );
   }
 }

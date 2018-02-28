@@ -8,17 +8,22 @@ The project uses [Create React App](https://github.com/facebook/create-react-app
 
 You can check out my [Process](#process) and [Problems Encountered](#problems) to see my approach to this challenge, and how I solved (hopefully) the issues I faced along the way.
 
+
+## Product
+
+![alt text](./Screenshot.png "InstaGallery screenshot")
+
 ## Process
 
 ## Page Layout
 
 Basic layout of the page and arrangement of components
 
-![alt text](./public/wireframe.png "Webpage Layout")
+![alt text](./wireframe.png "Webpage Layout")
 
 Layout of webpage with bonus features incorporated
 
-![alt text](./public/bonus_stories_wireframe.png "Bonus Layout")
+![alt text](./bonus_stories_wireframe.png "Bonus Layout")
 
 
 ## User Stories

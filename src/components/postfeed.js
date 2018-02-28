@@ -18,6 +18,7 @@ class Postfeed extends Component {
                         photo = {post.imageLink}
                         description = {post.description}
                         likes = {post.likes}
+                        liked = {post.liked}
                         />
                         
                     })}
