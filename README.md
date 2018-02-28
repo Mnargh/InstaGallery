@@ -7,6 +7,7 @@ A simple front end web page app designed using React that displays images posted
 The project uses [Create React App](https://github.com/facebook/create-react-app) and bootstrap for the design and layout.
 
 You can check out my [Process](#process) and [Problems Encountered](#problems) to see my approach to this challenge, and how I solved (hopefully) the issues I faced along the way.
+You can also see my [Retrospective](#retrospective) to see what I thought went well, what could be improved and what I would do with more time.
 
 
 ## Product
