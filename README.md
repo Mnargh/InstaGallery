@@ -82,3 +82,28 @@ So that I have more control of the content I like.
 
 * Is it necessary to test if props from a parent component?
     Postfeed passing props to Post which passes props to Username; this is a feature of React, so it does not seem necessary to test this. I only need to test the outcome of passing these props, which is that Username renders the props correctly.
+
+
+## Retrospective
+
+### What went well
+ *   Functionally, the components all interact with each other with good adherence to the single responsibility principle.
+ *   Flow of information from the json file, to the higher order components down to the child components is concise and readable.
+ 
+
+### What could be improved
+*   The testing of the components' behaviour and state; ensuring all behaviour/state/responsibility of each component is thoroughly tested.
+*   The style could be improved in many ways, such as the colour palette etc.
+*   The design is fitted to one size screen, it is not dynamic and would need some attention to remedy this.
+*   There is no current indication of whether the user has already liked a post or not, so a notification or change to the like icon could solve this problem.
+*   Some components have a state, but don't actually use their state so may not be necessary.
+
+### What I would do with more time
+
+* Reevaluate what tests are strictly necessary to assess if a component's responsibility is being correctly carried out, and implement these tests.
+* Investigate and implement dynamic rendering of the post component to correctly display the Postfeed on any sized screen.
+* Improve usability such as allowing a feature to tell the user they ahve already liked a post.
+* Finish off the user stories:
+    Add delete button for posts to remove them from the feed
+    Users can comment on posts
+    Users can toggle comment section on each post
